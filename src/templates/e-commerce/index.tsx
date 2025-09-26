@@ -1,5 +1,6 @@
 "use client";
 
+import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import ProductCard from "./components/ProductCard";
@@ -16,19 +17,22 @@ export default function EcommerceLanding() {
     { id: 2, name: "Product B", price: "$15", image: "/images/product2.jpg" },
     { id: 3, name: "Product C", price: "$20", image: "/images/product3.jpg" },
     { id: 4, name: "Product D", price: "$25", image: "/images/product4.jpg" },
-    { id: 5, name: "Product C", price: "$30", image: "/images/product3.jpg" },
-    { id: 6, name: "Product D", price: "$35", image: "/images/product4.jpg" },
+    { id: 5, name: "Product E", price: "$30", image: "/images/product3.jpg" },
+    { id: 6, name: "Product F", price: "$35", image: "/images/product4.jpg" },
   ];
 
   return (
     <Box>
-      {/* Hero Section */}
+      {/* 🔹 Navigation Bar */}
+      <Navigation />
+
+      {/* 🔹 Hero Section */}
       <Hero />
 
-      {/* Features Section */}
+      {/* 🔹 Features Section */}
       <Features />
 
-      {/* Products Section */}
+      {/* 🔹 Products Section */}
       <Box sx={{ py: 8 }}>
         <Container maxWidth="lg">
           <Typography variant="h4" align="center" gutterBottom>
@@ -37,7 +41,7 @@ export default function EcommerceLanding() {
 
           <Grid container spacing={2}>
             {products.map((product) => (
-              <Grid key={product.id} size={{ xs: 12, sm: 6, md: 4 }}>
+              <Grid key={product.id} item xs={12} sm={6} md={4}>
                 <ProductCard product={product} />
               </Grid>
             ))}
@@ -45,7 +49,7 @@ export default function EcommerceLanding() {
         </Container>
       </Box>
 
-      {/* Footer */}
+      {/* 🔹 Footer */}
       <Box sx={{ py: 6, textAlign: "center", background: "#f5f5f5" }}>
         <Container maxWidth="md">
           <Typography variant="h6">
