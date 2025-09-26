@@ -11,7 +11,6 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 
 export default function EcommerceLanding() {
-  // Example product data
   const products = [
     { id: 1, name: "Product A", price: "$10", image: "/images/product1.jpg" },
     { id: 2, name: "Product B", price: "$15", image: "/images/product2.jpg" },
@@ -23,13 +22,8 @@ export default function EcommerceLanding() {
 
   return (
     <Box>
-      {/* 🔹 Navigation Bar */}
       <Navigation />
-
-      {/* 🔹 Hero Section */}
       <Hero />
-
-      {/* 🔹 Features Section */}
       <Features />
 
       {/* 🔹 Products Section */}
@@ -39,9 +33,9 @@ export default function EcommerceLanding() {
             Featured Products
           </Typography>
 
-          <Grid container spacing={2}>
+          <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             {products.map((product) => (
-              <Grid key={product.id} item xs={12} sm={6} md={4}>
+              <Grid key={product.id} size={{ xs: 4, sm: 4, md: 4 }}>
                 <ProductCard product={product} />
               </Grid>
             ))}
