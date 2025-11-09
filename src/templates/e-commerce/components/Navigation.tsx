@@ -42,14 +42,16 @@ export default function Navigation() {
       >
         <Toolbar className="flex items-center justify-between gap-6">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0">
+          <Link href="/" className="flex items-center shrink-0 mr-6">
             <Image
               src="/favicon.ico"
               alt="Logo"
-              width={120}
+              width={40}
               height={40}
+              className="w-28 h-auto sm:w-32 md:w-36"
             />
           </Link>
+
 
           {/* Search with Autocomplete */}
           <Box className="flex-1 max-w-xl">
@@ -96,5 +98,6 @@ export default function Navigation() {
         </Toolbar>
       </AppBar>
     </header>
+
   );
 }
