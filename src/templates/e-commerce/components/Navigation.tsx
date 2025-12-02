@@ -12,6 +12,7 @@ import {
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import UtilityBar from "./UtilityBar";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -33,6 +34,8 @@ export default function Navigation() {
         </Link>
       </Box>
 
+      <UtilityBar />
+
       {/* 🔹 Main Header */}
       <AppBar
         position="sticky"
@@ -51,7 +54,6 @@ export default function Navigation() {
               className="w-28 h-auto sm:w-32 md:w-36"
             />
           </Link>
-
 
           {/* Search with Autocomplete */}
           <Box className="flex-1 max-w-xl">
@@ -98,6 +100,5 @@ export default function Navigation() {
         </Toolbar>
       </AppBar>
     </header>
-
   );
 }
