@@ -11,10 +11,10 @@ export default function MastheadTitle() {
         justifyContent: "space-between", // spacer for balance
       }}
     >
-      {/* */}
+      {/* 1. Spacer Kiri */}
       <div style={{ flex: 1 }}></div>
 
-      {/* */}
+      {/* 2. Judul Masthead (Di Tengah) */}
       <div
         style={{
           gap: "20px",
@@ -24,7 +24,7 @@ export default function MastheadTitle() {
           textAlign: "center",
         }}
       >
-        <Link href="/">Headline</Link>
+        <Link href="/">The News Media</Link>
       </div>
 
       {/* 3. Spacer Kanan */}
