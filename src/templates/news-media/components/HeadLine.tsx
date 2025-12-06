@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function MastheadTitle() {
+export default function Headline() {
   return (
     <div // Main
       style={{
