@@ -27,7 +27,7 @@ export default function Headline() {
         <Link href="/">Headline</Link>
       </div>
 
-      {/* 3. Spacer Kanan */}
+      {/*  */}
       <div style={{ flex: 1 }}></div>
     </div>
   );
