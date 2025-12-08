@@ -5,6 +5,7 @@ import Folio from "@/components/Folio";
 import Navbar from "@/components/Navbar";
 import MastHead from "@/components/MastHead";
 import HeadLine from "@/components/HeadLine";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Navbar />
         <HeadLine />
         {children}
+        <Footer />
       </body>
     </html>
   );
