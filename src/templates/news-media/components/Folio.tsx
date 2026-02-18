@@ -1,12 +1,12 @@
 import Link from "next/link";
+import { CSSProperties } from "react";
 
 export default function Folio({
   newspaperName = "The News Media",
   date = "Sunday, 07 December 2025",
   pageNumber = 1,
 }) {
-  // styling text Folio: small, grey, and bold
-  const folioTextStyle = {
+  const folioTextStyle: CSSProperties = {
     fontSize: "12px",
     fontWeight: "600",
     color: "#4a4a4a",
@@ -34,10 +34,12 @@ export default function Folio({
 
       {/* 2. right: grouping date and page in one elemen */}
       <div
-        style={{
-          textAlign: "right",
-          ...folioTextStyle,
-        }}
+        style={
+          {
+            ...folioTextStyle,
+            textAlign: "right",
+          } as any
+        }
       >
         {/* grouping date dan pageNumber withvertikal "|" */}
         {`${date} | PAGE ${pageNumber}`}
